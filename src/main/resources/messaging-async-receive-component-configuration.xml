@@ -40,16 +40,12 @@
   <import file="nablarch/batch/batch-data-read.xml" />
 
   <!-- メッセージング用コンポーネント定義ここから============================================================================================= -->
-  <component name="messagingProvider"
-      class="com.nablarch.example.sample.mom.EmbeddedMessagingProvider">
-    <property name="url"  value="tcp://localhost:61616" />
-    <!-- キュー定義 -->
-    <property name="queueNames">
-      <list>
-        <!-- サービス側にある要求受信キューの論理名 -->
-        <value>TEST.REQUEST</value>
-      </list>
-    </property>
+
+  <component name="messagingProvider" class="nablarch.integration.messaging.wmq.provider.WmqMessagingProvider">
+    <property name="queueManagerName" value="TEST" />
+    <property name="receivedQueueName" value="TEST.REQUEST"/>
+    <property name="poisonQueueName" value="TEST.POISON" />
+    <property name="useXa" value="false" />
   </component>
 
   <!-- メッセージ受信アクション用の設定 -->
