@@ -42,9 +42,9 @@
   <!-- メッセージング用コンポーネント定義ここから============================================================================================= -->
 
   <component name="messagingProvider" class="nablarch.integration.messaging.wmq.provider.WmqMessagingProvider">
-    <property name="queueManagerName" value="TEST" />
-    <property name="receivedQueueName" value="TEST.REQUEST"/>
-    <property name="poisonQueueName" value="TEST.POISON" />
+    <property name="queueManagerName" value="QM2" />
+    <property name="receivedQueueName" value="RECEIVEQUEUE"/>
+<!--    <property name="poisonQueueName" value="TEST.POISON" />-->
     <property name="useXa" value="false" />
   </component>
 
