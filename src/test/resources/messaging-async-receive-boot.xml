@@ -24,17 +24,17 @@
   </component>
 
   <!-- テスト用メッセージングプロバイダ -->
-  <component name="messagingProvider"
-      class="nablarch.test.core.messaging.EmbeddedMessagingProvider">
-    <!-- キュー定義 -->
-    <property name="queueNames">
-      <list>
-        <!-- サービス側にある要求受信キューの論理名 -->
-        <value>TEST.REQUEST</value>
-        <value>TEST.RESPONSE</value>
-      </list>
-    </property>
-  </component>
+<!--  <component name="messagingProvider"-->
+<!--      class="nablarch.test.core.messaging.EmbeddedMessagingProvider">-->
+<!--    &lt;!&ndash; キュー定義 &ndash;&gt;-->
+<!--    <property name="queueNames">-->
+<!--      <list>-->
+<!--        &lt;!&ndash; サービス側にある要求受信キューの論理名 &ndash;&gt;-->
+<!--        <value>TEST.REQUEST</value>-->
+<!--        <value>TEST.RESPONSE</value>-->
+<!--      </list>-->
+<!--    </property>-->
+<!--  </component>-->
 
 
   <!-- 初期化が必要なコンポーネント -->
